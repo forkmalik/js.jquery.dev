@@ -1,9 +1,7 @@
 let k = "*";
-var total = 11;
+var total = 30;
 var half1 = parseInt(total / 2);
-var half2 = half1;
-
-for (let j = 1; j < total; j++) {
+for (let j = 2; j < total; j++) {
     if (j <= half1) {
         for (k.length; k.length < j; k.length++) {
 
@@ -13,11 +11,16 @@ for (let j = 1; j < total; j++) {
         }
     }
    else {
-        half1--;
-        for (k; k.length > 0; k--) {
+       console.log(k);
+       console.log(k.length);
+        while(k !== ""){
             $('.out').append(k);
-            
+            $('.out').append('<br>');
+            k = k.slice("*",-1);
         }
+            
     }
-
+            
+            
 }
+
