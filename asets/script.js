@@ -11,8 +11,6 @@ for (let j = 2; j < total; j++) {
         }
     }
    else {
-       console.log(k);
-       console.log(k.length);
         while(k !== ""){
             $('.out').append(k);
             $('.out').append('<br>');
